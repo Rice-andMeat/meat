@@ -51,5 +51,93 @@
                 <p class="reasons-block-title">Сувениры</p>
                 <p class="reasons-block-about">Не только китайского, но и местного производства!</p>
             </div>
+    <!--номер 2 и 3-->
+   <div class="town">
+       <figure class="town-view">
+           <img src="img" alt="Город">
+       </figure>
+       <div class="town-description">
+           <p class="town-description-title">Там есть мост дьявола</p>
+           <p class="town-description-subtitle">№2</p>
+           <p class="town-description-about">Да, по нему можно пройти! если конечно вы осмелитесь</p>
+       </div>
+   </div>
+   <div class="benefits benefits-shorty">
+       <div class="benefits-block benefits-numbers benefits-square">
+           <p class="benefits-block-title">Небольшая площадь</p>
+           <p class="benefits-block-subtitle">№3</p>
+           <p class="benefits-block-about">Все достопримечательности находятся очень близко</p>
+       </div>
+       <div class="benefits-block benefits-numbers benefits-road">
+           <p class="benefits-block-title">Красивая дорога</p>
+           <p class="benefits-block-subtitle">№4</p>
+           <p class="benefits-block-about">Ехать в седону из лас-вегаса совсем не скучно!</p>
+       </div>
+       <div class="tourist">
+           <p class="benefits-block-title">Мало туристов</p>
+           <p class="benefits-block-subtitle">№5</p>
+           <p class="benefits-block-about">Большинство едет в гранд каньон и толпится там</p>
+       </div>
+   </div>
+   <div class="offer">
+       <p class="offer-title">Заинтересовались?</p>
+       <p class="offer-info">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне</p>
+       <div class="offer-block">
+           <a class="offer-search" href="#">Поиск гостиницы в Седоне</a>
+           <div class="offer-form">
+               <form method="post" action="/search">
+                   <div class="offer-form-dates">
+                       <div class="offer-form-row clearfix">
+                           <label class="offer-form-label" for="offer-arrive-date">Дата заезда:</label>
+                           <input type="date" id="offer-arrive-date" required>
+                       </div>
+                       <div class="offer-form-row clearfix">
+                           <label class="offer-form-label" for="offer-departure-date">Дата выезда:</label>
+                           <input type="date" id="offer-departure-date" required>
+                       </div>
+                   </div>
+                   <div class="offer-form-row clearfix">
+                       <div class="offer-form-col offer-col-adult clearfix">
+                           <label class="offer-form-label" for="offer-audit-adult">Взрослых:</label>
+                           <input type="text" id="offer-audit-adult" value="2" required>
+                           <a class="offer-controls-subtract" href="#"></a>
+                           <a class="offer-controls-add" href="#"></a>
+                       </div>
+                       <div class="offer-form-col offer-col-junior clearfix">
+                           <label class="offer-form-label" for="offer-audit-junior">Детей:</label>
+                           <input type="text" id="offer-audit-junior" value="1" required>
+                           <a class="offer-controls-subtract" href="#"></a>
+                           <a class="offer-controls-add" href="#"></a>
+                       </div>
+                   </div>
+                   <button class="offer-form-btn" type="submit">Найти</button>
+               </form>
+           </div>
+       </div>
+   </div>
+   <div class="map">
+       <figure class="map-image">
+           <img src="img/map-image.jpg" alt="Карта Седоны">
+       </figure>
+       <div class="map-script"></div>
+   </div>
+</main>
+<footer class="container">
+   <p class="footer-hashtag">#visitsedona</p>
+   <div class="footer-social">
+       <a class="footer-social-btn footer-social-twitter" href="#"></a>
+       <a class="footer-social-btn footer-social-facebook" href="#"></a>
+       <a class="footer-social-btn footer-social-youtube" href="#"></a>
+   </div>
+   <p class="footer-copyright">
+       <span class="footer-copyright-introduction">Website by</span>
+       <a class="footer-copyright-glukhanko" href="#"></a>
+       <span class="footer-copyright-introduction">for</span>
+       <a class="footer-copyright-htmlacademy" href="#"></a>
+   </p>
+</footer>
+<script src="http://maps.googleapis.com/maps/api/js?v=3&amp;sensor=false">
+</script>
+<script src="js/script.min.js"></script>
     </body>
 </html>
