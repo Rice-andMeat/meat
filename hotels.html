@@ -24,34 +24,48 @@
         <h2>Фильтр гостиниц</h2>
     <!-- здесь будут формы? -->
         <form method="post" action="/filter">
-            <div class="filter-infrastructure">
-                <p class="filter-infrastructure-title">Инфраструктура:</p>
-                <input type="checkbox" id="pool">
-                <label class="filter-variant" for="pool">Бассейн</label>
-                <input type="checkbox" id="parking">
-                <label class="filter-variant" for="parking">Парковка</label>
-                <input type="checkbox" id="-wifi">
-                <label class="filter-variant" for="wifi">wi-fi</label>
+            <fieldset class="filter-infrastructure">
+                <legend>Инфраструктура</legend>
+                <p>
+                    <input type="checkbox" id="pool">
+                    <label class="filter-variant" for="pool">Бассейн</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="parking">
+                    <label class="filter-variant" for="parking">Парковка</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="-wifi">
+                    <label class="filter-variant" for="wifi">wi-fi</label>
+                </p>
+            </fieldset>
+            <fieldset class="filter-housing">
+                <legend>Тип жилья:</legend>
+                <p>
+                    <input type="checkbox" id="hotel" checked>
+                    <label class="filter-variant" for="hotel">Гостиница</label>
+                </p>
+                <p>
+                     <input type="checkbox" id="filter-motel" checked>
+                    <label class="filter-variant" for="motel">Мотель</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="apartment" checked>
+                    <label class="filter-variant" for="apartment">Апартаменты</label>
+                </p>
+            </fieldset>
+            <fieldset class="filter-price-controll">
+                <legend>Стоимость в сутки (р):</legend>
+                <div class="filter-price-boundaries">
+                    <input type="text" value="От 0" required>
+                    <input type="text" value="До 5999" required>
+                </div>
+                <div class="filter-price-scale">
+                    <div class="filter-scale-toggle filter-min-toggle"></div>
+                    <div class="filter-scale-toggle filter-max-toggle"></div>
+                </div>
+            </fieldset>
 
-            <div class="filter-housing">
-                <p class="filter-housing-title">Тип жилья:</p>
-                <input type="checkbox" id="hotel" checked>
-                <label class="filter-variant" for="hotel">Гостиница</label>
-                <input type="checkbox" id="filter-motel" checked>
-                <label class="filter-variant" for="motel">Мотель</label>
-                <input type="checkbox" id="apartment" checked>
-                <label class="filter-variant" for="apartment">Апартаменты</label>
-            </div>
-        <p class="filter-price">Стоимость в сутки (р):</p>
-        <div class="filter-price-controll">
-            <div class="filter-price-boundaries">
-                <input type="text" value="От 0" required>
-                <input type="text" value="До 5999" required>
-            </div>
-            <div class="filter-price-scale">
-                <div class="filter-scale-toggle filter-min-toggle"></div>
-                <div class="filter-scale-toggle filter-max-toggle"></div>
-            </div>
             <div>
                 <button class="filter-btn" type="submit">Показать</button>
             </div>
@@ -118,18 +132,18 @@
            <p class="footer-hashtag">#visitsedona</p>
            <ul class="footer-social">
                 <li>
-                    <a class="footer-social-btn footer-social-twitter" href="#"></a>
+                    <a class="footer-social-btn footer-social-twitter" href="#">Twitter</a>
                 </li>
                 <li>
-                    <a class="footer-social-btn footer-social-facebook" href="#"></a>
+                    <a class="footer-social-btn footer-social-facebook" href="#">Facebook</a>
                 </li>
                 <li>
-                    <a class="footer-social-btn footer-social-youtube" href="#"></a>
+                    <a class="footer-social-btn footer-social-youtube" href="#">Youtube</a>
                 </li>
            </ul>
            <p class="footer-copyright">
                <span class="footer-copyright-introduction">Website by</span>
-               <a class="footer-copyright-glukhanko" href="#"></a>
+               <a class="footer-copyright-glukhanko" href="#">HTML Academy</a>
            </p>
         </footer>
     </body>
