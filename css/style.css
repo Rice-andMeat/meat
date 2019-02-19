@@ -20,3 +20,10 @@ a {
     font-weight: 700;
     text-transform: uppercase;
 }
+
+.main-nav a:hover {
+    color: #81b3d2;
+}
+.main-nav a:active {
+    color: rgba(0,0,0, 0.3);
+}
